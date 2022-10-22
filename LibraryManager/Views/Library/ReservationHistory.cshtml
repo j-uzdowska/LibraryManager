@@ -1,0 +1,14 @@
+﻿@model IEnumerable<LibraryManager.Models.Reservation>
+
+@{
+    ViewBag.Title = "Reservation History";
+}
+
+<h2>Reservation History</h2>
+<ul>
+    @foreach(var r in Model)
+            {
+                <li>@r.UserId - @r.ReservationDate</li>
+            }
+</ul>
+

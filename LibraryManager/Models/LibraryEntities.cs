@@ -8,7 +8,7 @@ namespace LibraryManager.Models
 {
     public class LibraryEntities:DbContext
     {
-        DbSet<Book> Books { get; set; }
-        DbSet<Reservation> Reservations { get; set; }
+        public DbSet<Book> Books { get; set; }
+        public DbSet<Reservation> Reservations { get; set; }
     }
 }

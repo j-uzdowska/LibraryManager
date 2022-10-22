@@ -1,0 +1,14 @@
+﻿@model LibraryManager.Models.Book
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Title: @Model.Name</h2>
+<h2>Author: @Model.Author</h2>
+<h3>Description</h3>
+<h3>@Model.Description</h3>
+<h2>@Html.ActionLink("Reserve this book","Reserve", new { id = Model.BookId })</h2>
+<h2>@Html.ActionLink("View reservation history", "ReservationHistory", new { id = Model.BookId })</h2>
+
+
