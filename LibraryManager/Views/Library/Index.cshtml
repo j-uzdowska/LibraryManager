@@ -4,11 +4,11 @@
     ViewBag.Title = "Books";
 }
 
-<h2>BOOKS AVAILABLE IN OUR LIBRARY</h2>
+<h3 style="color: coral">BOOKS AVAILABLE IN OUR LIBRARY</h3>
 <ul>
     @foreach (var book in Model)
             {
-                <li>@Html.ActionLink(book.Name, "Details", new { id = book.BookId})</li>
+                <li style="font-size: 20px">@Html.ActionLink(book.Name, "Details", new { id = book.BookId})</li>
             }
 </ul>
 

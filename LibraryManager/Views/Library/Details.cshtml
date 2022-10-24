@@ -4,11 +4,11 @@
     ViewBag.Title = "Details";
 }
 
-<h2>Title: @Model.Name</h2>
-<h2>Author: @Model.Author</h2>
-<h3>Description</h3>
-<h3>@Model.Description</h3>
-<h2>@Html.ActionLink("Reserve this book","Reserve", new { id = Model.BookId })</h2>
-<h2>@Html.ActionLink("View reservation history", "ReservationHistory", new { id = Model.BookId })</h2>
+<h2 style="color: coral">@Model.Name</h2>
+<h4>Author: @Model.Author</h4>
+<h4>Description</h4>
+<h4>@Model.Description</h4>
+@Html.ActionLink("Reserve this book", "Reserve", "Library", new { id = Model.BookId }, new { @class = "btn btn-primary btn-large" })
+<h4>@Html.ActionLink("View reservation history", "ReservationHistory", new { id = Model.BookId })</h4>
 
 
